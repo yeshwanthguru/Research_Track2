@@ -11,7 +11,9 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   message_generation
-  actionlib_msgsactionlib_msgs
+  actionlib_msgs
+  actionlib
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -71,7 +73,9 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
-   DEPENDENCIES actionlib_msgs
+   DEPENDENCIES
+  actionlib_msgs
+  geometry_msgs
  )
 
 ################################################
@@ -106,8 +110,8 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES rt2_assignment1
-  CATKIN_DEPENDS roscpp rospy
-  DEPENDS actionlib_msgs actionlib
+ # CATKIN_DEPENDS roscpp rospy
+ # DEPENDS actionlib_msgs actionlib
 )
 
 ###########
@@ -167,7 +171,8 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
  catkin_install_python(PROGRAMS
-   scripts/go_to_point.py scripts/user_interface.py
+   scripts/go_to_point.py 
+   scripts/user_interface.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
