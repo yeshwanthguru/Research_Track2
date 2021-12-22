@@ -4,7 +4,7 @@ float32 y
 float32 theta
 ---
 # definition of the process result
-bool ok
+bool result
 ---
 #definition of the feedback status
-bool cancelled
+bool request_stopped

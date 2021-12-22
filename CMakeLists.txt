@@ -110,8 +110,8 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES rt2_assignment1
- # CATKIN_DEPENDS roscpp rospy
- # DEPENDS actionlib_msgs actionlib
+#  CATKIN_DEPENDS roscpp rospy
+#  DEPENDS actionlib_msgs actionlib
 )
 
 ###########
