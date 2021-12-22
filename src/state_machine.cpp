@@ -51,14 +51,14 @@ int main(int argc, char **argv)
            if(start==false)
            {
                 pos.cancelGoal();
-                    std::cout << "\n goal cancelled" << std::endl;
+                    std::cout << "\n currently goal cancelled" << std::endl;
                     break;
                 }
                 else
                 {
                     if (pos.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
                     {
-                        std::cout << "\nGoal Reached!" << std::endl;
+                        std::cout << "\ncurrently Goal Reached!" << std::endl;
                         break;
                     }
                 }
