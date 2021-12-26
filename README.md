@@ -1,7 +1,7 @@
 # Research_Track2
-Name  :yeshwanth guru krishna kumar
-Reg No:S5059111
-RT2-Assignment-1
+Name  :yeshwanth guru krishna kumar\
+Reg No:S5059111\
+RT2-Assignment-1\
 
 
 This main branch defines the controlling the robot in vrep scene with the ros.
@@ -9,8 +9,7 @@ In this repository there are three sub branches such as **action**,**master** an
 
 ## PACKAGE DESCRIPTION:
 ## MAIN BRANCH:
-    
-    At initial the package is cloned from the repository 
+At initial the package is cloned from the repository 
 
    https://github.com/CarmineD8/rt2_assignment1.git
 
@@ -24,5 +23,26 @@ In this repository there are three sub branches such as **action**,**master** an
 
 Among the given packages there are four nodes developed 
 
+## Simulation execution process:
+You can execute the process with the command:
 
-![](images/Peek 2021-12-26 16-11.png)
+roslaunch rt2_assignment1 coppeliasim_roscontroll.launch
+
+with this above command the package will start the nodes in a new terminal should be open and then coppelia sim to be opened during the launch of the simulation environ ment we will find the **ros loading succeed** in the terminal of VREP launch which give the visual conformation that **ROS** is linked  with the coppelia sim. 
+
+
+our package consist of four nodes 
+**go_to_point**\
+**user_interface**\
+**position_service**\
+**state_machine**\
+
+## **go_to_point**\
+
+## **user_interface**\
+
+## **position_service**\
+     the node PositionServer, which implements a random Position Server GoToPoint
+position servic
+## **state_machine**\
+    
