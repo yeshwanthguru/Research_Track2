@@ -58,23 +58,7 @@ This is Vrep scene file contains the scene developed and controlled the robot wi
 
 ## **coppeliasim_roscontroll.launch** ##
 This is launch file for the vrep scene control which will execute the nodes to turn on in this section Vrep plays the simulation section and so it is linked with the ros with plugin which can be identified with the load success command int the coppelia launch terminal.And this is the launch file to activate the nodes in the ROS Side.
-             <?xml version="1.0"?>
-         <launch>
 
-  <!--As the condition is to simulate in coppelia using the ros connection and so from the given package 
-   gazebo launch skipped in the launch file and so using the plugin connection with the ros it can be identified with the 
-   terminal launch ros launch load succeed in the coppelia sim --> 
-	
-   <node name="goToPoint" pkg="rt2_assignment1" type ="go_to_point.py" />
-   
-   <node name="positionServer"  pkg="rt2_assignment1" type="position_service" />
-   
-   <node name="stateMachine" pkg="rt2_assignment1" type="state_machine" output="screen"/>
-   
-   <node name="userInterface" pkg="rt2_assignment1" type="user_interface.py" output="screen"/>
-   
-
-   </launch>
 
 ## **package.xml**  ##
 The package manifest is an XML file called package. xml that must be included with any catkin-compliant package's root folder. This file defines properties about the package such as the package name, version numbers, authors, maintainers, and dependencies on other catkin packages.
