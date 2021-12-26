@@ -58,6 +58,10 @@ This is Vrep scene file contains the scene developed and controlled the robot wi
 
 ## **coppeliasim_roscontroll.launch** ##
 This is launch file for the vrep scene control which will execute the nodes to turn on in this section Vrep plays the simulation section and so it is linked with the ros with plugin which can be identified with the load success command int the coppelia launch terminal.And this is the launch file to activate the nodes in the ROS Side.
+<<<<<<< HEAD
+=======
+ ![Screenshot from 2021-12-26 21-35-47](https://user-images.githubusercontent.com/72270080/147419470-13d42ab0-6bf2-418f-b2d3-73cff6957c7f.png)
+>>>>>>> 6eaee5926cfac5e2ca686f4c51f703b2b194fb61
 
 
 ## **package.xml**  ##
