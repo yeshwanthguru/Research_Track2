@@ -2,7 +2,7 @@
 # Research_Track2
 Name  :yeshwanth guru krishna kumar\
 Reg No:S5059111\
-RT2-Assignment-1\
+RT2-Assignment-1
 
 
 This main branch defines the controlling the robot in vrep scene with the ros.
@@ -34,10 +34,10 @@ with this above command the package will start the nodes in a new terminal shoul
 
 
 ## Our package consist of four nodes 
-[*]**go_to_point**\
-[*]**user_interface**\
-[*]**position_service**\
-[*]**state_machine** 
+**go_to_point**\
+**user_interface**\
+**position_service**\
+**state_machine** 
 
 ## **go_to_point**:
 go_to_point node  will implements a service to start or stop the robot towards a point in the environment.And the service implemented in this node would be able to drive the robot towards a certain position in space of (x,y) and with a certain angle (theta)
@@ -82,7 +82,7 @@ In the Terminal2 we should launch the coppelia sim once the ros side process don
                    ./Coppeliasim.sh 
 
 Once the coppelia sim is open you can import the scene file **dr12robot_roscontroll.ttt** from the repository with the option open scene in the coppeliasim.once the scene is loaded in the environment then should click on the play button to make the scene to run and then in the ROS side we want to give the input for the robot control once the input is given the robot simulation takes place in which this scene developed and control with the lua script with the ROS connection in the scripts which is developed with the threaded scripts .
- 
+
 
 
        
