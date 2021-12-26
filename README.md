@@ -21,6 +21,9 @@ At initial the package is cloned from the repository
 
 Among the given packages there are four nodes developed 
 
+![2](https://user-images.githubusercontent.com/72270080/147418872-404c7daa-e987-4dc3-845a-9e73551f208d.png)
+
+
 
 You can execute the process with the command:
 
