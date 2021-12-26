@@ -35,15 +35,15 @@ with this above command the package will start the nodes in a new terminal shoul
 **go_to_point**\
 **user_interface**\
 **position_service**\
-**state_machine**\
+**state_machine** \
 
-## **go_to_point**:\
+## **go_to_point**:
     go_to_point node  will implements a service to start or stop the robot towards a point in the environment.And the service implemented in this node would be able to drive the robot towards a certain position in space of (x,y) and with a certain angle (theta)
-## **user_interface**:\
+## **user_interface**:
     User interface node is to control the robot with the attributes start and stop and calls the service implemented in the state_machine node. 
-## **position_service**:\
+## **position_service**:
      The node PositionServer, which implements a random Position Server.And the service implemented in this node will gives the random values for x,y and thetain which the the values of x and y should be limited between min and max value. 
-## **state_machine**:\
+## **state_machine**:
      state_machine node implements a service to start or stop the robot and call the other two service to drive the robot.
 
 
