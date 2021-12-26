@@ -48,6 +48,9 @@ CMakeLists. txt file contains a set of directives and instructions describing th
 ## **package.xml**  ##
 The package manifest is an XML file called package. xml that must be included with any catkin-compliant package's root folder. This file defines properties about the package such as the package name, version numbers, authors, maintainers, and dependencies on other catkin packages.
 
+## **action** ##
+ROS Actions have a client-to-server communication relationship with a specified protocol. The actions use ROS topics to send goal messages from a client to the server. You can cancel goals using the action client. ... This function enables you to return the result message, final state of the goal and status of the server.
+
 ## **srv**  ##
 ROS uses a simplified service description language ("srv") for describing ROS service types. This builds directly upon the ROS msg format to enable request/response communication between nodes. Service descriptions are stored in .srv files in the srv/ subdirectory of a package. 
 
@@ -58,6 +61,15 @@ ROS uses a simplified service description language ("srv") for describing ROS se
 ## **Code Execution process ** ##
 
 Above the complete package Architecture package has been describes now the package execution process will be seen
+
+
+Package should be launched with the command 
+
+
+                   roslaunch rt2_assignment1 sim.launch
+
+
+Once this is launched gazebo and the nodes were started depends upon the input given in the interface due to the implementation of action server will results in preemption of the robot goal it means robot can be stopped at the lastpoint after the implementation of the action server from the given package .
 
 
 
