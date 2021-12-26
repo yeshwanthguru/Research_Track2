@@ -59,10 +59,10 @@ This is Vrep scene file contains the scene developed and controlled the robot wi
 ## **coppeliasim_roscontroll.launch** ##
 This is launch file for the vrep scene control which will execute the nodes to turn on in this section Vrep plays the simulation section and so it is linked with the ros with plugin which can be identified with the load success command int the coppelia launch terminal.And this is the launch file to activate the nodes in the ROS Side.
 
-## **package.xml**##
+## **package.xml**  ##
 The package manifest is an XML file called package. xml that must be included with any catkin-compliant package's root folder. This file defines properties about the package such as the package name, version numbers, authors, maintainers, and dependencies on other catkin packages.
 
-## **srv**##
+## **srv**  ##
 ROS uses a simplified service description language ("srv") for describing ROS service types. This builds directly upon the ROS msg format to enable request/response communication between nodes. Service descriptions are stored in .srv files in the srv/ subdirectory of a package. 
 
                       [*]command.srv
