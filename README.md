@@ -30,7 +30,7 @@ Among the given packages there are four nodes developed
 
 You can execute the process with the command:
 
-         roslaunch rt2_assignment1 coppeliasim_roscontroll.launch
+                   roslaunch rt2_assignment1 coppeliasim_roscontroll.launch
 
 with this above command the package will start the nodes in a new terminal should be open and then coppelia sim to be opened during the launch of the simulation environ ment we will find the **ros loading succeed** in the terminal of VREP launch which give the visual conformation that **ROS** is linked  with the coppelia sim. 
 
@@ -57,7 +57,7 @@ CMakeLists. txt file contains a set of directives and instructions describing th
 This is Vrep scene file contains the scene developed and controlled the robot with the lua script and here we used dr12 robot for this scene.This will be controlled with the ros by using this package its executing process will be described below .
 
 ## **coppeliasim_roscontroll.launch** ##
-This is launch file for the vrep scene control which will execute the nodes to turn on in this section Vrep plays the simulation section and so it is linked with the ros with plugin which can be identified with the load success command int the coppelia launch terminal.
+This is launch file for the vrep scene control which will execute the nodes to turn on in this section Vrep plays the simulation section and so it is linked with the ros with plugin which can be identified with the load success command int the coppelia launch terminal.And this is the launch file to activate the nodes in the ROS Side.
 
 ## **package.xml**##
 The package manifest is an XML file called package. xml that must be included with any catkin-compliant package's root folder. This file defines properties about the package such as the package name, version numbers, authors, maintainers, and dependencies on other catkin packages.
@@ -80,8 +80,10 @@ Our Complete package with respect to the ros side we needs the nodes to be activ
 
 Once this is launched you will get the user interface to control the robot with the input 1 to start the robot and 0 to stop the robot.
 
-In the Terminal2 we should launch the coppelia sim once the ros side process done during the sim environment launched we can see the command in the crep launch terminal that **ROS LOADING SUCCESS** once getting in to the vrep directory we can launch the 
-                   ./Coppeliasim.sh 
+In the Terminal2 we should launch the coppelia sim once the ros side process done during the sim environment launched we can see the command in the crep launch terminal that **ROS LOADING SUCCESS** once getting in to the vrep directory we can launch the \
+                      
+                      
+                                  ./Coppeliasim.sh 
 
 Once the coppelia sim is open you can import the scene file **dr12robot_roscontroll.ttt** from the repository with the option open scene in the coppeliasim.once the scene is loaded in the environment then should click on the play button to make the scene to run and then in the ROS side we want to give the input for the robot control once the input is given the robot simulation takes place in which this scene developed and control with the lua script with the ROS connection in the scripts which is developed with the threaded scripts .
 
