@@ -91,11 +91,16 @@ In the Terminal2 we should launch the coppelia sim once the ros side process don
 
 Once the coppelia sim is open you can import the scene file **dr12robot_roscontroll.ttt** from the repository with the option open scene in the coppeliasim.once the scene is loaded in the environment then should click on the play button to make the scene to run and then in the ROS side we want to give the input for the robot control once the input is given the robot simulation takes place in which this scene developed and control with the lua script with the ROS connection in the scripts which is developed with the threaded scripts .
 
+And the final output of vrep scene is attached for reference in gif format
+
+
+
 
 
        
 
- 
+ ![vrep](https://user-images.githubusercontent.com/72270080/152235150-5d179e5f-047f-4101-8f12-29c48141b526.gif)
+
  
 
 
