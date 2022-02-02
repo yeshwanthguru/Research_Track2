@@ -96,8 +96,7 @@ And the final output of vrep scene is attached for reference in  screenshot form
 
 
 
-
-       ![WhatsApp Image 2022-02-02 at 9 55 11 PM](https://user-images.githubusercontent.com/72270080/152235883-16a5a57a-a6e7-4a01-8f63-9e6a12f95d1e.jpeg)
+![WhatsApp Image 2022-02-02 at 9 55 11 PM](https://user-images.githubusercontent.com/72270080/152235883-16a5a57a-a6e7-4a01-8f63-9e6a12f95d1e.jpeg)
 
 
  
