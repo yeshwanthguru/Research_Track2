@@ -1,0 +1,43 @@
+Name \+:yeshwanth guru krishna kumar\textbackslash{} Reg No\+:S5059111\textbackslash{} R\+T2-\/\+Assignment-\/1 R\+OS A\+C\+T\+I\+ON S\+E\+R\+V\+ER I\+N\+C\+L\+U\+D\+ED R\+O\+B\+OT C\+O\+N\+T\+R\+OL IN G\+A\+Z\+E\+BO S\+I\+M\+U\+L\+A\+T\+I\+ON
+
+This action branch defines the controlling the robot in G\+A\+Z\+E\+BO simulation with the ros. Including the action server in the given package nodes .R\+OS Actions have a client-\/to-\/server communication relationship with a specified protocol. The actions use R\+OS topics to send goal messages from a client to the server. You can cancel goals using the action client. ... This function enables you to return the result message, final state of the goal and status of the server.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{P\+A\+C\+K\+A\+G\+E D\+E\+S\+C\+R\+I\+P\+T\+I\+O\+N A\+N\+D S\+I\+M\+U\+L\+A\+T\+I\+O\+N E\+X\+E\+C\+U\+T\+I\+O\+N P\+R\+O\+C\+E\+S\+S\+:}\label{md__r_e_a_d_m_e_autotoc_md1}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{A\+C\+T\+I\+O\+N B\+R\+A\+N\+C\+H —$>$ R\+O\+S A\+C\+T\+I\+O\+N S\+E\+R\+V\+E\+R I\+N\+C\+L\+U\+D\+E\+D R\+O\+B\+O\+T C\+O\+N\+T\+R\+O\+L I\+N G\+A\+Z\+E\+B\+O S\+I\+M\+U\+L\+A\+T\+I\+ON}\label{md__r_e_a_d_m_e_autotoc_md2}
+\+: At initial the package is cloned from the repository
+
+\href{https://github.com/CarmineD8/rt2_assignment1.git}{\texttt{ https\+://github.\+com/\+Carmine\+D8/rt2\+\_\+assignment1.\+git}}
+
+and the requirment is to control a robot in the vrep scene with the R\+OS is developed and updated in this repository sub branch action
+
+\href{https://github.com/yeshwanthguru/Research_Track2.git}{\texttt{ https\+://github.\+com/yeshwanthguru/\+Research\+\_\+\+Track2.\+git}}
+
+Among the given packages there are four nodes developed
+
+
+
+You can execute the process with the command\+: \begin{DoxyVerb}               roslaunch rt2_assignment1 sim.launch
+\end{DoxyVerb}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{Our package consist of four nodes}\label{md__r_e_a_d_m_e_autotoc_md3}
+{\bfseries{go\+\_\+to\+\_\+point}}\textbackslash{} {\bfseries{user\+\_\+interface}}\textbackslash{} {\bfseries{position\+\_\+service}}\textbackslash{} {\bfseries{state\+\_\+machine}}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{$<$strong$>$go\+\_\+to\+\_\+point$<$/strong$>$\+:}\label{md__r_e_a_d_m_e_autotoc_md4}
+go\+\_\+to\+\_\+point node will implements a service to start or stop the robot towards a point in the environment.\+And the service implemented in this node would be able to drive the robot towards a certain position in space of (x,y) and with a certain angle (theta) and the action server is included. \hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{$<$strong$>$user\+\_\+interface$<$/strong$>$\+:}\label{md__r_e_a_d_m_e_autotoc_md5}
+User interface node is to control the robot with the attributes start and stop and calls the service implemented in the state\+\_\+machine node. \hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{$<$strong$>$position\+\_\+service$<$/strong$>$\+:}\label{md__r_e_a_d_m_e_autotoc_md6}
+The node Position\+Server, which implements a random Position Server.\+And the service implemented in this node will gives the random values for x,y and theta in which the the values of x and y should be limited between min and max value. \hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysection{$<$strong$>$state\+\_\+machine$<$/strong$>$\+:}\label{md__r_e_a_d_m_e_autotoc_md7}
+state\+\_\+machine node implements a service to start or stop the robot and call the other two service to drive the robot.\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysection{$<$strong$>$\+C\+Makelist.\+txt$<$/strong$>$}\label{md__r_e_a_d_m_e_autotoc_md8}
+C\+Make\+Lists. txt file contains a set of directives and instructions describing the project\textquotesingle{}s source files and targets (executable, library, or both). When you create a new project, C\+Lion generates C\+Make\+Lists. ... txt files to describe the build, contents, and target rules for a subdirectory of the assignment.\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysection{$<$strong$>$package.\+xml$<$/strong$>$}\label{md__r_e_a_d_m_e_autotoc_md9}
+The package manifest is an X\+ML file called package. xml that must be included with any catkin-\/compliant package\textquotesingle{}s root folder. This file defines properties about the package such as the package name, version numbers, authors, maintainers, and dependencies on other catkin packages.\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysection{$<$strong$>$action$<$/strong$>$}\label{md__r_e_a_d_m_e_autotoc_md10}
+R\+OS Actions have a client-\/to-\/server communication relationship with a specified protocol. The actions use R\+OS topics to send goal messages from a client to the server. You can cancel goals using the action client. ... This function enables you to return the result message, final state of the goal and status of the server.\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysection{$<$strong$>$srv$<$/strong$>$}\label{md__r_e_a_d_m_e_autotoc_md11}
+R\+OS uses a simplified service description language (\char`\"{}srv\char`\"{}) for describing R\+OS service types. This builds directly upon the R\+OS msg format to enable request/response communication between nodes. Service descriptions are stored in .srv files in the srv/ subdirectory of a package. \begin{DoxyVerb}                  [*]command.srv
+                  [*]position.srv
+                  [*]Randomposition.srv
+\end{DoxyVerb}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysection{$\ast$$\ast$\+Code Execution process $\ast$$\ast$}\label{md__r_e_a_d_m_e_autotoc_md12}
+Above the complete package Architecture package has been describes now the package execution process will be seen
+
+Package should be launched with the command
+
+\begin{DoxyVerb}               roslaunch rt2_assignment1 sim.launch
+\end{DoxyVerb}
+
+
+Once this is launched gazebo and the nodes were started depends upon the input given in the interface due to the implementation of action server will results in preemption of the robot goal it means robot can be stopped at the lastpoint after the implementation of the action server from the given package .
+
+ 
