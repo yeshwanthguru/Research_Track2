@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>Research_Track2</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Name :yeshwanth guru krishna kumar\ Reg No:S5059111\ RT2-Assignment-1 ROS ACTION SERVER INCLUDED ROBOT CONTROL IN GAZEBO SIMULATION</para>
+<para>This action branch defines the controlling the robot in GAZEBO simulation with the ros. Including the action server in the given package nodes .ROS Actions have a client-to-server communication relationship with a specified protocol. The actions use ROS topics to send goal messages from a client to the server. You can cancel goals using the action client. ... This function enables you to return the result message, final state of the goal and status of the server.</para>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md1">
+<title>PACKAGE DESCRIPTION AND SIMULATION EXECUTION PROCESS:</title>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md2">
+<title>ACTION BRANCH —&gt; ROS ACTION SERVER INCLUDED ROBOT CONTROL IN GAZEBO SIMULATION</title>
+<para>: At initial the package is cloned from the repository</para>
+<para><ulink url="https://github.com/CarmineD8/rt2_assignment1.git">https://github.com/CarmineD8/rt2_assignment1.git</ulink></para>
+<para>and the requirment is to control a robot in the vrep scene with the ROS is developed and updated in this repository sub branch action</para>
+<para><ulink url="https://github.com/yeshwanthguru/Research_Track2.git">https://github.com/yeshwanthguru/Research_Track2.git</ulink></para>
+<para>Among the given packages there are four nodes developed</para>
+<para><image type="html" name="147418872-404c7daa-e987-4dc3-845a-9e73551f208d.png" inline="yes"></image>
+</para>
+<para>You can execute the process with the command: <verbatim>               roslaunch rt2_assignment1 sim.launch
+</verbatim></para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md3">
+<title>Our package consist of four nodes</title>
+<para><bold><ref refid="namespacego__to__point" kindref="compound">go_to_point</ref></bold>\ <bold><ref refid="namespaceuser__interface" kindref="compound">user_interface</ref></bold>\ <bold>position_service</bold>\ <bold>state_machine</bold></para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md4">
+<title>&lt;strong&gt;go_to_point&lt;/strong&gt;:</title>
+<para><ref refid="namespacego__to__point" kindref="compound">go_to_point</ref> node will implements a service to start or stop the robot towards a point in the environment.And the service implemented in this node would be able to drive the robot towards a certain position in space of (x,y) and with a certain angle (theta) and the action server is included. </para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md5">
+<title>&lt;strong&gt;user_interface&lt;/strong&gt;:</title>
+<para>User interface node is to control the robot with the attributes start and stop and calls the service implemented in the state_machine node. </para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md6">
+<title>&lt;strong&gt;position_service&lt;/strong&gt;:</title>
+<para>The node PositionServer, which implements a random Position Server.And the service implemented in this node will gives the random values for x,y and theta in which the the values of x and y should be limited between min and max value. </para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md7">
+<title>&lt;strong&gt;state_machine&lt;/strong&gt;:</title>
+<para>state_machine node implements a service to start or stop the robot and call the other two service to drive the robot.</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md8">
+<title>&lt;strong&gt;CMakelist.txt&lt;/strong&gt;</title>
+<para>CMakeLists. txt file contains a set of directives and instructions describing the project&apos;s source files and targets (executable, library, or both). When you create a new project, CLion generates CMakeLists. ... txt files to describe the build, contents, and target rules for a subdirectory of the assignment.</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md9">
+<title>&lt;strong&gt;package.xml&lt;/strong&gt;</title>
+<para>The package manifest is an XML file called package. xml that must be included with any catkin-compliant package&apos;s root folder. This file defines properties about the package such as the package name, version numbers, authors, maintainers, and dependencies on other catkin packages.</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md10">
+<title>&lt;strong&gt;action&lt;/strong&gt;</title>
+<para>ROS Actions have a client-to-server communication relationship with a specified protocol. The actions use ROS topics to send goal messages from a client to the server. You can cancel goals using the action client. ... This function enables you to return the result message, final state of the goal and status of the server.</para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md11">
+<title>&lt;strong&gt;srv&lt;/strong&gt;</title>
+<para>ROS uses a simplified service description language (&quot;srv&quot;) for describing ROS service types. This builds directly upon the ROS msg format to enable request/response communication between nodes. Service descriptions are stored in .srv files in the srv/ subdirectory of a package. <verbatim>                  [*]command.srv
+                  [*]position.srv
+                  [*]Randomposition.srv
+</verbatim></para>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md12">
+<title>**Code Execution process **</title>
+<para>Above the complete package Architecture package has been describes now the package execution process will be seen</para>
+<para>Package should be launched with the command</para>
+<para><verbatim>               roslaunch rt2_assignment1 sim.launch
+</verbatim></para>
+<para>Once this is launched gazebo and the nodes were started depends upon the input given in the interface due to the implementation of action server will results in preemption of the robot goal it means robot can be stopped at the lastpoint after the implementation of the action server from the given package .</para>
+<para><image type="html" name="147648598-de222b9a-8821-4ec5-8206-4d93f4bfb053.png" inline="yes"></image>
+ </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

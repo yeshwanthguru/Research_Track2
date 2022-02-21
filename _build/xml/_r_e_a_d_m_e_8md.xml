@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Research_Track2</highlight></codeline>
+<codeline><highlight class="normal">Name<sp/><sp/>:yeshwanth<sp/>guru<sp/>krishna<sp/>kumar\</highlight></codeline>
+<codeline><highlight class="normal">Reg<sp/>No:S5059111\</highlight></codeline>
+<codeline><highlight class="normal">RT2-Assignment-1<sp/>ROS<sp/>ACTION<sp/>SERVER<sp/>INCLUDED<sp/>ROBOT<sp/>CONTROL<sp/>IN<sp/>GAZEBO<sp/>SIMULATION</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>action<sp/>branch<sp/>defines<sp/>the<sp/>controlling<sp/>the<sp/>robot<sp/>in<sp/>GAZEBO<sp/>simulation<sp/>with<sp/>the<sp/>ros.</highlight></codeline>
+<codeline><highlight class="normal">Including<sp/>the<sp/>action<sp/>server<sp/>in<sp/>the<sp/>given<sp/>package<sp/>nodes<sp/>.ROS<sp/>Actions<sp/>have<sp/>a<sp/>client-to-server<sp/>communication<sp/>relationship<sp/>with<sp/>a<sp/>specified<sp/>protocol.<sp/>The<sp/>actions<sp/>use<sp/>ROS<sp/>topics<sp/>to<sp/>send<sp/>goal<sp/>messages<sp/>from<sp/>a<sp/>client<sp/>to<sp/>the<sp/>server.<sp/>You<sp/>can<sp/>cancel<sp/>goals<sp/>using<sp/>the<sp/>action<sp/>client.<sp/>...<sp/>This<sp/>function<sp/>enables<sp/>you<sp/>to<sp/>return<sp/>the<sp/>result<sp/>message,<sp/>final<sp/>state<sp/>of<sp/>the<sp/>goal<sp/>and<sp/>status<sp/>of<sp/>the<sp/>server.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>PACKAGE<sp/>DESCRIPTION<sp/>AND<sp/>SIMULATION<sp/>EXECUTION<sp/>PROCESS:</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>ACTION<sp/>BRANCH<sp/>---&gt;<sp/>ROS<sp/>ACTION<sp/>SERVER<sp/>INCLUDED<sp/>ROBOT<sp/>CONTROL<sp/>IN<sp/>GAZEBO<sp/>SIMULATION</highlight></codeline>
+<codeline><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal">At<sp/>initial<sp/>the<sp/>package<sp/>is<sp/>cloned<sp/>from<sp/>the<sp/>repository<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>https://github.com/CarmineD8/rt2_assignment1.git</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>and<sp/>the<sp/>requirment<sp/>is<sp/>to<sp/>control<sp/>a<sp/>robot<sp/>in<sp/>the<sp/>vrep<sp/>scene<sp/>with<sp/>the<sp/>ROS<sp/>is<sp/>developed<sp/>and<sp/>updated<sp/>in<sp/>this<sp/>repository<sp/>sub<sp/>branch<sp/>action</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>https://github.com/yeshwanthguru/Research_Track2.git</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Among<sp/>the<sp/>given<sp/>packages<sp/>there<sp/>are<sp/>four<sp/>nodes<sp/>developed<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![2](https://user-images.githubusercontent.com/72270080/147418872-404c7daa-e987-4dc3-845a-9e73551f208d.png)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>execute<sp/>the<sp/>process<sp/>with<sp/>the<sp/>command:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>roslaunch<sp/>rt2_assignment1<sp/>sim.launch</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Our<sp/>package<sp/>consist<sp/>of<sp/>four<sp/>nodes<sp/></highlight></codeline>
+<codeline><highlight class="normal">**go_to_point**\</highlight></codeline>
+<codeline><highlight class="normal">**user_interface**\</highlight></codeline>
+<codeline><highlight class="normal">**position_service**\</highlight></codeline>
+<codeline><highlight class="normal">**state_machine**<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>**go_to_point**:</highlight></codeline>
+<codeline><highlight class="normal">go_to_point<sp/>node<sp/><sp/>will<sp/>implements<sp/>a<sp/>service<sp/>to<sp/>start<sp/>or<sp/>stop<sp/>the<sp/>robot<sp/>towards<sp/>a<sp/>point<sp/>in<sp/>the<sp/>environment.And<sp/>the<sp/>service<sp/>implemented<sp/>in<sp/>this<sp/>node<sp/>would<sp/>be<sp/>able<sp/>to<sp/>drive<sp/>the<sp/>robot<sp/>towards<sp/>a<sp/>certain<sp/>position<sp/>in<sp/>space<sp/>of<sp/>(x,y)<sp/>and<sp/>with<sp/>a<sp/>certain<sp/>angle<sp/>(theta)<sp/>and<sp/>the<sp/>action<sp/>server<sp/>is<sp/>included.</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>**user_interface**:</highlight></codeline>
+<codeline><highlight class="normal">User<sp/>interface<sp/>node<sp/>is<sp/>to<sp/>control<sp/>the<sp/>robot<sp/>with<sp/>the<sp/>attributes<sp/>start<sp/>and<sp/>stop<sp/>and<sp/>calls<sp/>the<sp/>service<sp/>implemented<sp/>in<sp/>the<sp/>state_machine<sp/>node.<sp/></highlight></codeline>
+<codeline><highlight class="normal">##<sp/>**position_service**:</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>node<sp/>PositionServer,<sp/>which<sp/>implements<sp/>a<sp/>random<sp/>Position<sp/>Server.And<sp/>the<sp/>service<sp/>implemented<sp/>in<sp/>this<sp/>node<sp/>will<sp/>gives<sp/>the<sp/>random<sp/>values<sp/>for<sp/>x,y<sp/>and<sp/>theta<sp/>in<sp/>which<sp/>the<sp/>the<sp/>values<sp/>of<sp/>x<sp/>and<sp/>y<sp/>should<sp/>be<sp/>limited<sp/>between<sp/>min<sp/>and<sp/>max<sp/>value.<sp/></highlight></codeline>
+<codeline><highlight class="normal">##<sp/>**state_machine**:</highlight></codeline>
+<codeline><highlight class="normal">state_machine<sp/>node<sp/>implements<sp/>a<sp/>service<sp/>to<sp/>start<sp/>or<sp/>stop<sp/>the<sp/>robot<sp/>and<sp/>call<sp/>the<sp/>other<sp/>two<sp/>service<sp/>to<sp/>drive<sp/>the<sp/>robot.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>**CMakelist.txt**</highlight></codeline>
+<codeline><highlight class="normal">CMakeLists.<sp/>txt<sp/>file<sp/>contains<sp/>a<sp/>set<sp/>of<sp/>directives<sp/>and<sp/>instructions<sp/>describing<sp/>the<sp/>project&apos;s<sp/>source<sp/>files<sp/>and<sp/>targets<sp/>(executable,<sp/>library,<sp/>or<sp/>both).<sp/>When<sp/>you<sp/>create<sp/>a<sp/>new<sp/>project,<sp/>CLion<sp/>generates<sp/>CMakeLists.<sp/>...<sp/>txt<sp/>files<sp/>to<sp/>describe<sp/>the<sp/>build,<sp/>contents,<sp/>and<sp/>target<sp/>rules<sp/>for<sp/>a<sp/>subdirectory<sp/>of<sp/>the<sp/>assignment.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>**package.xml**<sp/><sp/>##</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>package<sp/>manifest<sp/>is<sp/>an<sp/>XML<sp/>file<sp/>called<sp/>package.<sp/>xml<sp/>that<sp/>must<sp/>be<sp/>included<sp/>with<sp/>any<sp/>catkin-compliant<sp/>package&apos;s<sp/>root<sp/>folder.<sp/>This<sp/>file<sp/>defines<sp/>properties<sp/>about<sp/>the<sp/>package<sp/>such<sp/>as<sp/>the<sp/>package<sp/>name,<sp/>version<sp/>numbers,<sp/>authors,<sp/>maintainers,<sp/>and<sp/>dependencies<sp/>on<sp/>other<sp/>catkin<sp/>packages.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>**action**<sp/>##</highlight></codeline>
+<codeline><highlight class="normal">ROS<sp/>Actions<sp/>have<sp/>a<sp/>client-to-server<sp/>communication<sp/>relationship<sp/>with<sp/>a<sp/>specified<sp/>protocol.<sp/>The<sp/>actions<sp/>use<sp/>ROS<sp/>topics<sp/>to<sp/>send<sp/>goal<sp/>messages<sp/>from<sp/>a<sp/>client<sp/>to<sp/>the<sp/>server.<sp/>You<sp/>can<sp/>cancel<sp/>goals<sp/>using<sp/>the<sp/>action<sp/>client.<sp/>...<sp/>This<sp/>function<sp/>enables<sp/>you<sp/>to<sp/>return<sp/>the<sp/>result<sp/>message,<sp/>final<sp/>state<sp/>of<sp/>the<sp/>goal<sp/>and<sp/>status<sp/>of<sp/>the<sp/>server.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>**srv**<sp/><sp/>##</highlight></codeline>
+<codeline><highlight class="normal">ROS<sp/>uses<sp/>a<sp/>simplified<sp/>service<sp/>description<sp/>language<sp/>(&quot;srv&quot;)<sp/>for<sp/>describing<sp/>ROS<sp/>service<sp/>types.<sp/>This<sp/>builds<sp/>directly<sp/>upon<sp/>the<sp/>ROS<sp/>msg<sp/>format<sp/>to<sp/>enable<sp/>request/response<sp/>communication<sp/>between<sp/>nodes.<sp/>Service<sp/>descriptions<sp/>are<sp/>stored<sp/>in<sp/>.srv<sp/>files<sp/>in<sp/>the<sp/>srv/<sp/>subdirectory<sp/>of<sp/>a<sp/>package.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[*]command.srv</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[*]position.srv</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[*]Randomposition.srv</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>**Code<sp/>Execution<sp/>process<sp/>**<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Above<sp/>the<sp/>complete<sp/>package<sp/>Architecture<sp/>package<sp/>has<sp/>been<sp/>describes<sp/>now<sp/>the<sp/>package<sp/>execution<sp/>process<sp/>will<sp/>be<sp/>seen</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Package<sp/>should<sp/>be<sp/>launched<sp/>with<sp/>the<sp/>command<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>roslaunch<sp/>rt2_assignment1<sp/>sim.launch</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Once<sp/>this<sp/>is<sp/>launched<sp/>gazebo<sp/>and<sp/>the<sp/>nodes<sp/>were<sp/>started<sp/>depends<sp/>upon<sp/>the<sp/>input<sp/>given<sp/>in<sp/>the<sp/>interface<sp/>due<sp/>to<sp/>the<sp/>implementation<sp/>of<sp/>action<sp/>server<sp/>will<sp/>results<sp/>in<sp/>preemption<sp/>of<sp/>the<sp/>robot<sp/>goal<sp/>it<sp/>means<sp/>robot<sp/>can<sp/>be<sp/>stopped<sp/>at<sp/>the<sp/>lastpoint<sp/>after<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>action<sp/>server<sp/>from<sp/>the<sp/>given<sp/>package<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>![actionserver](https://user-images.githubusercontent.com/72270080/147648598-de222b9a-8821-4ec5-8206-4d93f4bfb053.png)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>
