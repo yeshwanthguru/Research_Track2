@@ -78,7 +78,13 @@ Once this is launched gazebo and the nodes were started depends upon the input g
 
 
    ![actionserver](https://user-images.githubusercontent.com/72270080/147648598-de222b9a-8821-4ec5-8206-4d93f4bfb053.png)
+   
+   
+   In the second terminal should do with the command 
     
+                            jupyter notebook --allow-root
+                            
+   TO turn on the jupyter notebook in witch we developed some interface and we are going to control the robot using the interfaces developed in the jupyter notebook
 
  
  
