@@ -74,8 +74,8 @@ For the compile of rosbridge everything done on the basis of mapping rule contai
  Once everything is done after building the package launch the fle with the following command 
  
  
- [*]Terminal 1(ros)--------->roslaunch rt2_assignment1 ros_ros2_bridge.launch
- [*]Terminal 2(ros2)--------->ros2 run ros1_bridge dynamic_bridge
+ [*]Terminal 1(ros)--------->roslaunch rt2_assignment1 ros_ros2_bridge.launch\
+ [*]Terminal 2(ros2)--------->ros2 run ros1_bridge dynamic_bridge\
  [*]Terminal 3(ros1 and 2)--------->ros2 launch rt2_assignment1 sim_container.py
  
  
