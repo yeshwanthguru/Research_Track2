@@ -11,8 +11,8 @@ RT2-Assignment-1
 At initial the package is cloned from the repository 
 
    https://github.com/CarmineD8/rt2_assignment1.git
-package tree
-   ![Peek 2021-12-26 16-11](https://user-images.githubusercontent.com/72270080/147417311-ef6c9f2c-6027-4f3a-ae81-9801f304195a.png)
+
+
 And the package is clonned inside the ros1 environment workspace and then later clone the ros 2 package which is develeopen and updated in ther repository
 
    https://github.com/yeshwanthguru/Research_Track2.git -b ros2
@@ -55,7 +55,7 @@ This file is to map the ros and ros2 workspace ......
 
 For the complete setup some process to be followed to set the environment on following process
 
-## **ROS_WS **##
+## WorkSpace setup **##
 At initial during time to setting the ros setup workspace by sourcing the terminal one with the ros source file and procedd the further process to set the environment with the ros script in one terminal and for the ros2 environment want to source ros2 environment with the source script file and clone the developed package into it and in one terminal source ros and ros2 script together with a script .Once source is done package is cloned in specific workspace to proceed the ros1_bridge
 
                        git clone https://github.com/ros2/ros1_bridge.git
