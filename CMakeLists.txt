@@ -30,7 +30,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 ament_export_dependencies(rosidl_default_runtime)
 
 # Random position server
-add_library(Roboran_Pos_Service SHARED
+  add_library(Roboran_Pos_Service SHARED
   src/position_service.cpp) 
   
 rclcpp_components_register_node(RPS
@@ -43,7 +43,7 @@ rosidl_target_interfaces(Roboran_Pos_Service
 	${PROJECT_NAME} "rosidl_typesupport_cpp")
 	  
 # Finite state machine
-add_library(Fin_State_Machi SHARED
+  add_library(Fin_State_Machi SHARED
   src/state_machine.cpp)
     
 rclcpp_components_register_node(Fin_State_Machi
@@ -53,7 +53,7 @@ rclcpp_components_register_node(Fin_State_Machi
 ament_target_dependencies(FSM rclcpp rclcpp_components)  
 
 	
-rosidl_target_interfaces(Fin_State_Machi
+ rosidl_target_interfaces(Fin_State_Machi
 	${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 install(TARGETS
