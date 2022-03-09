@@ -50,7 +50,7 @@ rclcpp_components_register_node(Fin_State_Machi
   PLUGIN "rt2_assignment1::Fin_State_Machi"
   EXECUTABLE comp_state_machine)  
 
-ament_target_dependencies(FSM rclcpp rclcpp_components)  
+ament_target_dependencies(Fin_State_Mach rclcpp rclcpp_components)  
 
 	
  rosidl_target_interfaces(Fin_State_Machi
