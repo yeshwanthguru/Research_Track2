@@ -19,7 +19,7 @@ namespace rt2_assignment1
 	{
 		public:
 		
-			RPS(const rclcpp::NodeOptions & options) : Node("random_position_server", options)
+			Roboran_Pos_Service(const rclcpp::NodeOptions & options) : Node("random_position_server", options)
 			{ 
 				// create a new service to provide the random position when requested
 				service_ = this->create_service<RandomPosition>("/position_server", std::bind(&Roboran_Pos_Service::my_random, this, _1, _2, _3));
